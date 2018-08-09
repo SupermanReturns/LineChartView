@@ -16,6 +16,10 @@
 		CF39041A211C2077001DB640 /* LineChartViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390419211C2077001DB640 /* LineChartViewTests.m */; };
 		CF390425211C2077001DB640 /* LineChartViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390424211C2077001DB640 /* LineChartViewUITests.m */; };
 		CF390436211C2934001DB640 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390435211C2934001DB640 /* ChartView.m */; };
+		CF39043F211C31D6001DB640 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390438211C31D5001DB640 /* UIColor+expanded.m */; };
+		CF390440211C31D6001DB640 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390439211C31D6001DB640 /* UIImage+Common.m */; };
+		CF390441211C31D6001DB640 /* UIButton+EnlargeTouchArea.m in Sources */ = {isa = PBXBuildFile; fileRef = CF39043C211C31D6001DB640 /* UIButton+EnlargeTouchArea.m */; };
+		CF390442211C31D6001DB640 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = CF39043E211C31D6001DB640 /* UIView+Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		CF390426211C2077001DB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF390434211C2934001DB640 /* ChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
 		CF390435211C2934001DB640 /* ChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
+		CF390437211C31D5001DB640 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		CF390438211C31D5001DB640 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		CF390439211C31D6001DB640 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		CF39043A211C31D6001DB640 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		CF39043B211C31D6001DB640 /* UIButton+EnlargeTouchArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeTouchArea.h"; sourceTree = "<group>"; };
+		CF39043C211C31D6001DB640 /* UIButton+EnlargeTouchArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeTouchArea.m"; sourceTree = "<group>"; };
+		CF39043D211C31D6001DB640 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		CF39043E211C31D6001DB640 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,14 @@
 		CF390432211C28F9001DB640 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CF39043B211C31D6001DB640 /* UIButton+EnlargeTouchArea.h */,
+				CF39043C211C31D6001DB640 /* UIButton+EnlargeTouchArea.m */,
+				CF390437211C31D5001DB640 /* UIColor+expanded.h */,
+				CF390438211C31D5001DB640 /* UIColor+expanded.m */,
+				CF39043D211C31D6001DB640 /* UIImage+Common.h */,
+				CF390439211C31D6001DB640 /* UIImage+Common.m */,
+				CF39043A211C31D6001DB640 /* UIView+Common.h */,
+				CF39043E211C31D6001DB640 /* UIView+Common.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -283,10 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF39043F211C31D6001DB640 /* UIColor+expanded.m in Sources */,
+				CF390441211C31D6001DB640 /* UIButton+EnlargeTouchArea.m in Sources */,
 				CF390405211C2073001DB640 /* ViewController.m in Sources */,
 				CF390410211C2077001DB640 /* main.m in Sources */,
 				CF390402211C2073001DB640 /* AppDelegate.m in Sources */,
+				CF390440211C31D6001DB640 /* UIImage+Common.m in Sources */,
 				CF390436211C2934001DB640 /* ChartView.m in Sources */,
+				CF390442211C31D6001DB640 /* UIView+Common.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = LineChartView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +500,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = LineChartView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

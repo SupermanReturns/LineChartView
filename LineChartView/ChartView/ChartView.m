@@ -11,6 +11,7 @@
 
 #define btnW 12
 #define titleWOfY 60
+
 @interface ChartView()<UIScrollViewDelegate>
 {
     CGFloat currentPage;//当前页数
