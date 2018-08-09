@@ -15,6 +15,7 @@
 		CF390410211C2077001DB640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF39040F211C2077001DB640 /* main.m */; };
 		CF39041A211C2077001DB640 /* LineChartViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390419211C2077001DB640 /* LineChartViewTests.m */; };
 		CF390425211C2077001DB640 /* LineChartViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390424211C2077001DB640 /* LineChartViewUITests.m */; };
+		CF390436211C2934001DB640 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF390435211C2934001DB640 /* ChartView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CF390420211C2077001DB640 /* LineChartViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineChartViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF390424211C2077001DB640 /* LineChartViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineChartViewUITests.m; sourceTree = "<group>"; };
 		CF390426211C2077001DB640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF390434211C2934001DB640 /* ChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
+		CF390435211C2934001DB640 /* ChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		CF3903FF211C2073001DB640 /* LineChartView */ = {
 			isa = PBXGroup;
 			children = (
+				CF390433211C2908001DB640 /* ChartView */,
+				CF390432211C28F9001DB640 /* Category */,
 				CF390400211C2073001DB640 /* AppDelegate.h */,
 				CF390401211C2073001DB640 /* AppDelegate.m */,
 				CF390403211C2073001DB640 /* ViewController.h */,
@@ -130,6 +135,22 @@
 				CF390426211C2077001DB640 /* Info.plist */,
 			);
 			path = LineChartViewUITests;
+			sourceTree = "<group>";
+		};
+		CF390432211C28F9001DB640 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CF390433211C2908001DB640 /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				CF390434211C2934001DB640 /* ChartView.h */,
+				CF390435211C2934001DB640 /* ChartView.m */,
+			);
+			path = ChartView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +286,7 @@
 				CF390405211C2073001DB640 /* ViewController.m in Sources */,
 				CF390410211C2077001DB640 /* main.m in Sources */,
 				CF390402211C2073001DB640 /* AppDelegate.m in Sources */,
+				CF390436211C2934001DB640 /* ChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = LineChartView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = LineChartView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
