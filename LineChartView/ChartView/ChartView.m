@@ -144,8 +144,6 @@
     [self.chartScrollView addSubview:self.scrollBgView1];
     [self.scrollBgView1 addSubview:self.bgView1];
     
-    
-    
     //    [self addLines1With:self.bgView1];
     //    [self addLines1With:self.bgView2];
     
