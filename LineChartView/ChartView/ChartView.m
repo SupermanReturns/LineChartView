@@ -78,10 +78,9 @@
 -(UIView *)scrollBgView1{
     if (!_scrollBgView1) {
         _scrollBgView1 = [[UIView alloc]initWithFrame:CGRectMake(0, 40, self.chartScrollView.bounds.size.width-5, self.chartScrollView.bounds.size.height)];
-        
+        _scrollBgView1.backgroundColor=[UIColor yellowColor];
     }
     return _scrollBgView1;
-    
 }
 /**  背景网格 */
 -(UIView *)bgView1{
@@ -90,6 +89,8 @@
         _bgView1.layer.masksToBounds = YES;
         //        _bgView1.layer.cornerRadius = 5;
         _bgView1.layer.borderWidth = 1;
+        _bgView1.backgroundColor=[UIColor greenColor];
+
         _bgView1.layer.borderColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1].CGColor;
     }
     return _bgView1;
@@ -133,10 +134,11 @@
     
     self.chartScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(titleWOfY, 0, self.bounds.size.width-titleWOfY, self.bounds.size.height)];
     self.chartScrollView.contentOffset = CGPointMake(0, 0);
-    self.chartScrollView.backgroundColor = [UIColor clearColor];
+    self.chartScrollView.backgroundColor = [UIColor cyanColor];
     self.chartScrollView.delegate = self;
     self.chartScrollView.showsHorizontalScrollIndicator = NO;
     self.chartScrollView.pagingEnabled = YES;
+    
     self.chartScrollView.contentSize = CGSizeMake(self.bounds.size.width*2, 0);
     
     [self addSubview:self.chartScrollView];
@@ -255,6 +257,8 @@
     shapeLayer.path = beizer.CGPath;
     shapeLayer.fillColor = [UIColor clearColor].CGColor;
     shapeLayer.strokeColor = [UIColor colorWithHexString:@"0xf38b10" andAlpha:1.0].CGColor;
+//    shapeLayer.strokeColor = [UIColor redColor].CGColor;
+
     shapeLayer.lineWidth = 2;
     [self.scrollBgView1.layer addSublayer:shapeLayer];
     
@@ -401,6 +405,7 @@
     
     _titleOfX = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.scrollBgView1.frame) + 30, CGRectGetMaxY(self.chartScrollView.frame) - 20, 30, 20)];
     _titleOfX.font = [UIFont systemFontOfSize:10.0f];
+//    _titleOfX.backgroundColor=[UIColor redColor];
     _titleOfX.textAlignment = kCTTextAlignmentCenter;
     _titleOfX.textColor = [UIColor colorWithHexString:@"0x999999"];
     _titleOfX.text = _titleOfXStr;
