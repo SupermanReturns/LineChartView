@@ -38,8 +38,6 @@
     _incomeChartLineView = [[ChartView alloc]initWithFrame:CGRectMake(0, 40, self.view.bounds.size.width, 200)];
     _incomeChartLineView.backgroundColor = [UIColor clearColor];
     
-    //    _incomeChartLineView.leftDataArr =  @[@"0.2",@"0.4",@"0.6",@"0.2",@"0.7",@"0.5",@"0.8"];
-    //    _incomeChartLineView.leftDataArr =  @[@"0.4",@"0.4",@"0.4",@"0.4",@"0.4",@"0.4"];
     
     _incomeChartLineView.titleOfYStr = @"七日收益(元)";
     _incomeChartLineView.titleOfXStr = @"(日)";

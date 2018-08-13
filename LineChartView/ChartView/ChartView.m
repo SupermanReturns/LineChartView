@@ -51,6 +51,7 @@
         _scaleLabel.text = @"3.3681%";
         _scaleLabel.font = [UIFont systemFontOfSize:11];
         _scaleLabel.backgroundColor = [UIColor colorWithRed:255/255.0 green:159/255.0 blue:106/255.0 alpha:1];
+//        _scaleLabel.backgroundColor= [UIColor redColor];
         _scaleLabel.textColor = [UIColor whiteColor];
     }
     return _scaleLabel;
@@ -63,11 +64,12 @@
         _dateTimeLabel.font = [UIFont systemFontOfSize:11];
         _dateTimeLabel.backgroundColor = [UIColor whiteColor];
         _dateTimeLabel.textColor = [UIColor colorWithRed:181/255.0 green:181/255.0 blue:181/255.0 alpha:1];
+//        _dateTimeLabel.backgroundColor= [UIColor grayColor];
+
     }
     return _dateTimeLabel;
 }
 -(UILabel *)lineLabel{
-    
     if (!_lineLabel) {
         _lineLabel = [[UILabel alloc]init];
         _lineLabel.backgroundColor = [UIColor colorWithRed:255/255.0 green:159/255.0 blue:106/255.0 alpha:1];
@@ -78,7 +80,7 @@
 -(UIView *)scrollBgView1{
     if (!_scrollBgView1) {
         _scrollBgView1 = [[UIView alloc]initWithFrame:CGRectMake(0, 40, self.chartScrollView.bounds.size.width-5, self.chartScrollView.bounds.size.height)];
-        _scrollBgView1.backgroundColor=[UIColor yellowColor];
+//        _scrollBgView1.backgroundColor=[UIColor yellowColor];
     }
     return _scrollBgView1;
 }
@@ -89,7 +91,7 @@
         _bgView1.layer.masksToBounds = YES;
         //        _bgView1.layer.cornerRadius = 5;
         _bgView1.layer.borderWidth = 1;
-        _bgView1.backgroundColor=[UIColor greenColor];
+//        _bgView1.backgroundColor=[UIColor greenColor];
 
         _bgView1.layer.borderColor = [UIColor colorWithRed:239/255.0 green:239/255.0 blue:239/255.0 alpha:1].CGColor;
     }
@@ -134,7 +136,7 @@
     
     self.chartScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(titleWOfY, 0, self.bounds.size.width-titleWOfY, self.bounds.size.height)];
     self.chartScrollView.contentOffset = CGPointMake(0, 0);
-    self.chartScrollView.backgroundColor = [UIColor cyanColor];
+//    self.chartScrollView.backgroundColor = [UIColor cyanColor];
     self.chartScrollView.delegate = self;
     self.chartScrollView.showsHorizontalScrollIndicator = NO;
     self.chartScrollView.pagingEnabled = YES;
@@ -221,7 +223,7 @@
     //遮罩层
     CAShapeLayer *shadeLayer = [CAShapeLayer layer];
     shadeLayer.path = bezier1.CGPath;
-    shadeLayer.fillColor = [UIColor greenColor].CGColor;
+//    shadeLayer.fillColor = [UIColor greenColor].CGColor;
     
     
     //渐变图层
